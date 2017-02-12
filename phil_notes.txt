@@ -1,0 +1,51 @@
+
+Technical contact
+tbruce@cimpress.com
+Taylor
+
+
+Spin up server locally
+cd to project directory
+npm install -g serve
+serve . -p 3000
+
+(or try hosting on one of these
+aws t1 micro
+redhat openshift
+manp - spin up server on OSX
+)
+
+visit http://localhost:3000/ on browser
+
+
+Staging Print fulfillment v2 JSON
+
+{
+  "PartnerOrderId": "5b3ce-2484-4e95-929-d3b3ef3f031d4",
+  "CustomerId": "2321321393343222",
+  "Items": [
+    {
+      "Quantity": 500,
+      "Sku": "VIP-45213",
+      "DocumentReferenceUrl": "http://uds.documents.cimpress.io/v2/merchants/vcs/documents/OnboardMe-51d67ccc-d3a2-49f6-93d8-c7b5acdbd282/docref?token=fcfee8767b63ce2909d31642f32811aa",
+      "PartnerItemId": "6343292",
+      "PartnerProductName": "Business Cards"
+    }
+  ],
+  "DestinationAddress": {
+    "FirstName": "Adarsh",
+    "LastName": "Uppula",
+    "MiddleName": "",
+    "CompanyName": "Pied Piper",
+    "Phone": "415-555-1212",
+    "PhoneExtension": "",
+    "AddressLine1": "44 Tehama",
+    "AddressLine2": "",
+    "City": "San Francisco",
+    "StateOrRegion": "CA",
+    "PostalCode": "94105",
+    "CountryCode": "US",
+    "County": "San Francisco"
+  },
+  "DeliveryOptionId": "2"
+}
